@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divider_line_short"/>
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rg"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_weight="1"
+            android:background="@drawable/home_selector"
+            android:id="@+id/rb_home"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+        <RadioButton
+            android:layout_weight="1"
+            android:background="@drawable/class_selector"
+            android:id="@+id/rb_classs"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+        <RadioButton
+            android:layout_weight="1"
+            android:background="@drawable/shopping_selector"
+            android:id="@+id/rb_shopping"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+        <RadioButton
+            android:layout_weight="1"
+            android:background="@drawable/myebuy_selector"
+            android:id="@+id/rb_myebuy"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+</LinearLayout>
